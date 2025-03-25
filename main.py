@@ -34,6 +34,7 @@ def get_today_lunch():
 # Webhook to auto-reply when someone types "lunch" or "午餐"
 @app.route("/webhook", methods=["POST"])
 def webhook():
+    print("User ID:", event["source"]["userId"], flush=True)
     body = request.get_json()
     try:
         for event in body["events"]:
