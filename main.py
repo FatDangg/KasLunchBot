@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 # Your LINE access token
-LINE_ACCESS_TOKEN = "c9e901efa691f5070fa59c89a8f75e53"
+LINE_ACCESS_TOKEN = "PxA7x7ls4KnWrK5v75znz9SHjMiXYcu61eeIGy+BXY06VgPQV08wAUTewoXkoR9zFcmh9xDigRTWLlAVPLDowHR8S2ruSXLjCRO/raCMT5LpdumnEiCtA2Mrpdv5lEdnMRxryvtnSznAONDyy2XC6wdB04t89/1O/w1cDnyilFU="
 LINE_REPLY_URL = "https://api.line.me/v2/bot/message/reply"
 LINE_PUSH_URL = "https://api.line.me/v2/bot/message/push"
 
