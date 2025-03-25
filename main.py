@@ -34,10 +34,10 @@ def get_today_lunch():
 # Webhook to auto-reply when someone types "lunch" or "午餐"
 @app.route("/webhook", methods=["POST"])
 def webhook():
-    print("User ID:", event["source"]["userId"], flush=True)
     body = request.get_json()
     try:
         for event in body["events"]:
+            print("User ID:", event["source"]["userId"], flush=True)
             if event["type"] == "message" and event["message"]["type"] == "text":
                 user_message = event["message"]["text"].lower()
                 reply_token = event["replyToken"]
