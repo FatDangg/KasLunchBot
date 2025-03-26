@@ -60,7 +60,7 @@ def webhook():
 
                 save_user(user_id)  # Save anyone who sends a message
 
-                if "lunch" in user_message or "午餐" in user_message:
+                if "lunch" in user_message or "午餐" in user_message or "Lunch" in user_message or "LUNCH" in user_message:
                     reply_text = get_today_lunch()
                     headers = {
                         "Content-Type": "application/json",
